@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "timesnewroman";
+  src: url('timesnewroman.ttf') format('truetype');
+}
+
+header {
+    margin: auto;
+    height: 400px;
+    width: 1300px;
+    background: #d2f8fd;
+    text-align: center;
+  }
+  
+  main {
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #d2f8fd;
+    margin: 0 auto;
+    padding: 30px 0;
+  }
+  
+  main > .maintop {
+    width: 80%;
+    height: 2000px;
+    background-size: 100% 100%;
+    margin-bottom: 80px;
+  }
+  
+  main > .maintop > div {
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  main > .maintop > div > h2 {
+    width: 80%;
+    line-height: 40px;
+    margin: 0 auto;
+    cursor: default;
+    color: rgb(4, 34, 26);
+  }
+  
+  main > .maintop > div > p {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 15px;
+    cursor: default;
+    color: rgb(11, 208, 252);
+    font-weight: bolder;
+    font-family: Times New Roman
+  }
+  
+  main > .mainbottom {
+    width: 80%;
+    display: flex;
+    background: white;
+  }
+  
+  main > .mainbottom > .rdiv {
+    flex: 1;
+    border-left: 2px solid grey;
+  }
+  
+  main > .mainbottom > .rdiv > h2 {
+    width: 90%;
+    line-height: 60px;
+    margin: 0 auto;
+    cursor: default;
+    color: #019cb0;
+    text-shadow: -1px -1px white, 1px 1px black;
+  }
+  
+  main > .mainbottom > .rdiv > p {
+    width: 85%;
+    margin: 15px auto;
+    cursor: default;
+    font-family: "楷体";
+    font-size: 1.1em;
+  }

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "timesnewroman";
+    src: url('timesnewroman.ttf') format('truetype');
+  }
+  
+header {
+    margin: auto;
+    height: 400px;
+    width: 1300px;
+    background: #d2f8fd;
+    text-align: center;
+  }
+  
+  main {
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #d2f8fd;
+    margin: auto; /* Updated property */
+    padding: 0px 0;
+  }
+  
+  

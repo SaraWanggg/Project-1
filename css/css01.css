@@ -1,0 +1,94 @@
+    /* Slideshow section styles */
+  section {
+    /* Set width and height for the slideshow container */
+    width: 1300px;
+    height: 400px;
+    /* Center the container horizontally */
+    margin: 0 auto;
+  }
+  
+  section > ul {
+    /* Set width and height for the image collection container within the slideshow */
+    width: 100%;
+    height: 100%;
+    /* Set relative positioning for the container */
+    position: relative;
+    /* Preserve 3D transform style */
+    transform-style: preserve-3d;
+    /* Set perspective for 3D effect */
+    perspective: 4000px;
+  }
+  
+  section > ul > li {
+    /* Set width and height for individual image containers */
+    width: 600px;
+    height: 300px;
+    /* Set absolute positioning - horizontally and vertically center the li within ul */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -300px;
+    /* Add border-radius to create rounded corners for the container */
+    border-radius: 20px;
+    /* Hide overflow */
+    overflow: hidden;
+    /* Add transition for smooth animation */
+    transition: all 0.5s linear;
+    /* Set cursor to pointer */
+    cursor: pointer;
+  }
+  
+  section > ul > li > img {
+    /* Set width and height for the images within the slideshow */
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Main section styles */
+  main {
+    width: 1300px;
+    margin: 0 auto;
+    background: #f2f2f2;
+  }
+  
+  /* Top section styles */
+  main > .top {
+    width: 95%;
+    margin: 0 auto;
+    height: 250px;
+  }
+  
+  main > .top > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -25px;
+  }
+  
+  main > .top > ul > li {
+    width: 30%;
+    height: 100%;
+    background: #fdfdfd;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  main > .top > ul > li > h4 {
+    color: #8c7e82;
+    cursor: default;
+  }
+  
+  main > .top > ul > li > p {
+    height: 70%;
+    width: 80%;
+    text-align: center;
+    color: #bfbfbf;
+    cursor: default;
+  }

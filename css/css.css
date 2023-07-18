@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Serif"; /* Font family name */
+    src: local("Times New Roman"), local("TimesNewRoman"), url('timesnewroman.ttf') format('truetype'); /* Font file path and format */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    /* Background color */
+    background: #d2f8fd;
+  }
+  
+  ol, ul, li {
+    list-style-type: none;
+  }
+  
+  a {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(53, 144, 172);
+    text-decoration: none;
+    transition: transform 2s ease;
+    font-family: "Serif", Times New Roman, serif; /* Add the Serif font family */
+  }
+  
+  nav {
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    /* Set navigation bar background color */
+    background: white;
+  }
+  
+  nav > ul > li > a:hover {
+    color: #024855;
+    transform: scale(2);
+  }
+  
+  nav > ul {
+    width: 800px;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  nav > ul > li {
+    height: 50px;
+    z-index: 1;
+  }
+  
+  nav > ul > li:nth-child(3) {
+    /* Set styles for the third li element in the ul */
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(53, 144, 172);
+    cursor: pointer;
+  }
+  
+  nav > ul > li:nth-child(3) > .hidden {
+    /* Set basic styles for the hidden dropdown menu */
+    height: 0;
+    overflow: hidden;
+    transition: all .5s linear;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  nav > ul > li:nth-child(3) > .hidden > li {
+    height: 45px;
+  }
+  
+  nav > ul > li:nth-child(3):hover > .hidden {
+    /* Set the height of the dropdown menu on hover */
+    height: 270px;
+  }
+    
+  /* Footer styles */
+  footer {
+    height: 150px;
+    width: 100%;
+    background: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  footer > img {
+    width: 300px;
+    height: 50px;
+  }
+  
+  footer > p,
+  footer > div {
+    width: 300px;
+    color: rgb(53, 144, 172);
+    text-align: center;
+  }
+  
